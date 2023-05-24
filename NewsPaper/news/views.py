@@ -58,7 +58,7 @@ class PostDetail(DetailView):
 
     def get_queryset(self):
 
-        return Post.objects#.filter(categoryType='NW')
+        return Post.objects.filter(categoryType='NW')
 
 
 class PostCreate(CreateView):
